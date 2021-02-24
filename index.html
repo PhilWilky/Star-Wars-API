@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SWAPI</title>
+
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col col-lg-12 col-md-6">
+        <h1>Star Wars Person Search</h1>
+        <p>Please type the name of the person you want to search for, then click on the search button. Results will appear below.</p>
+    <div class="input-area">
+      <input type="text" id="userInput" required>
+      <button type="button" id="button" onclick="getInfo()">Search!</button>
+    </div>
+    <div class="text-area">
+    <div class="info-container">
+      <div id="error" class="danger" role="alert"></div>
+      <section id="container" class="container">
+      </section>
+    </div>
+    </div>
+</div>
+  
+
+
+
+
+
+<link href="style.css" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"
+    integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ=="
+    crossorigin="anonymous"></script>
+<script src="app.js" charset="utf-8" defer></script>
+</body>
+
+</html>
